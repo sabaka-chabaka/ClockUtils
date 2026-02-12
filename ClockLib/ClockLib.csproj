@@ -5,14 +5,13 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{9C7C87DF-9B65-47C2-B7E7-7E0D7730DEE0}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{FC1F98EA-E2FB-4DD0-81F2-DE4007B94731}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ClockUtils</RootNamespace>
-        <AssemblyName>ClockUtils</AssemblyName>
+        <RootNamespace>ClockLib</RootNamespace>
+        <AssemblyName>ClockLib</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,14 +40,8 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs"/>
+        <Compile Include="Utils.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="ClockLib\ClockLib.csproj">
-        <Project>{fc1f98ea-e2fb-4dd0-81f2-de4007b94731}</Project>
-        <Name>ClockLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
