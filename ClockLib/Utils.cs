@@ -100,5 +100,10 @@ namespace ClockLib
         {
             _timer?.Dispose();
         }
+
+        public DateTime CurrentDate()
+        {
+            return DateTime.Now;
+        }
     }
 }

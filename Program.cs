@@ -9,7 +9,7 @@ namespace ClockUtils
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("---WELCOME TO CLOCK UTILITIES---");
-            Console.WriteLine("Commands: start, pause, resume, stop, history");
+            Console.WriteLine("Commands: start, pause, resume, stop, history, time");
 
             var clock = new Utils();
 
@@ -62,6 +62,14 @@ namespace ClockUtils
                                 Console.WriteLine(
                                     $"{i + 1}. {Utils.Format(clock.History[i])}");
                             }
+                            break;
+                        case "time":
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            Console.WriteLine(clock.CurrentDate());
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            break;
+                        default:
+                            Console.WriteLine("Unknown command");
                             break;
                     }
                 }
