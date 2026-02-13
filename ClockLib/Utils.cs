@@ -105,5 +105,10 @@ namespace ClockLib
         {
             return DateTime.Now;
         }
+
+        public TimeZoneInfo CurrentTimeZoneInfo()
+        {
+            return TimeZoneInfo.Local;
+        }
     }
 }

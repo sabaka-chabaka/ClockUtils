@@ -62,10 +62,12 @@ namespace ClockUtils
                                 Console.WriteLine(
                                     $"{i + 1}. {Utils.Format(clock.History[i])}");
                             }
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
                             break;
                         case "time":
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine(clock.CurrentDate());
+                            Console.WriteLine(clock.CurrentTimeZoneInfo());
                             Console.ForegroundColor = ConsoleColor.DarkGreen;
                             break;
                         default:
